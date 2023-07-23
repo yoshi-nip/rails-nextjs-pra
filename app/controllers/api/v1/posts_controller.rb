@@ -14,11 +14,12 @@ class Api::V1::PostsController < ApplicationController
     if @post.save
       render json: @post, status: :created
     else
-      render json: @post.errors status: :unprocessable_entitiy
+      render json: @post.errors, status: :unprocessable_entitiy
     end
   end
 
   def update
+
   end
 
   def destroy
